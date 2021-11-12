@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Invoice</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/site.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <div>
+        <!--Image and Client number, possible Print button-->
+        <div class="row">
+          <div class="col">
+            <img src="/img/IdeaFoundryLogo.png" alt="idea Foundry Logo" />
+          </div>
+          <div class="col">
+            <div class="col d-flex justify-content-end">
+                <div>
+              <label for="inputClient" class="form-label">Client No:</label>
+              <input
+                type="number"
+                class="form-control"
+                id="inputClient"
+                placeholder="#"
+              />
+            </div>
+            </div>
+          </div>
+        </div>
+        <!--Date and Invoice #-->
+<div class="row-fluid mt-5 gy-1">
+    <div class="container p-2">
+        <div class="col-md-12 d-flex justify-content-start">
+            <label for="invoiceDate">Date:  </label>
+            <input type="date" id="invoiceDate" name="invoiceDate">
+        </div>
+        <div class="col-md-12 d-flex justify-content-end">
+            <label for="invoiceNumber">Invoice No:  </label>
+            <input type="number" id="invoiceNumber" name="invoiceNumber">
+        </div>
+    </div>
+</div>
+        <!--Table-->
+        <Div class="table-responsive ">
+            <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Service</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Rate</th>
+                    <th scope="col">QTY</th>
+                    <th scope="col">Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Design</th>
+                    <td>Website Design</td>
+                    <td>$60.00</td>
+                    <td>10</td>
+                    <td>$600.00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Development</th>
+                    <td>Website Development</td>
+                    <td>$150.00</td>
+                    <td>10</td>
+                    <td>$1500.00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Deployment</th>
+                    <td>Deployment and Hosting</td>
+                    <td>$150.00</td>
+                    <td>1</td>
+                    <td>$450.00</td>
+                  </tr>
+                  <tr>
+                                        
+                    <td colspan="5"><b> Total:</b> $2550.00</td>
+                  </tr>
+                  <tr>
+                                  
+                    <td colspan="5"><b>Tax:</b> $0.00</td>
+                  </tr>
+                  <tr>
+                                       
+                    <td colspan="5"><b>Total:</b> $2550.00</td>
+                  </tr>
+                </tbody>
+                <tfooter>
+                    <tr>
+                        <td colspan="5"> <b>NOTE:</b> This is computer generated reciept and does not require physical signature.</td>
+                    </tr>
+                    </tr>
+                </tfooter>
+            </table>
+        <!--Note-->
+        <div>
+        
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
